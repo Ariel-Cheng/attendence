@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>attendence</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="attendence.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">实时签到系统</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="flase" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">班级：高一(1)班</a>
+                    </li>
+                    <li>
+                        <a href="#">班主任：戴志诚</a>
+                    </li>
+                    <li>
+                        <a href="#">班级总人数：45人</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 sidebar">
+                <div class="widget">
+                    <h4 class="title">
+                        课程：数学
+                    </h4>
+                    <div class="content">
+                        <p>任课教师：戴志诚</p>
+                        <p>
+                            <a>
+                                <i class="fa fa-comments"></i>
+                                教学评价：任教10年，特级教师
+                            </a>
+                        </p>
+                        <p>
+                            <a>
+                                <i class="fa icon-phone"></i>
+                                电话：1356788192
+                            </a>
+                        </p>
+                        <p>
+                            <a>
+                                <i class="fa icon-time"></i>
+                                开课时间：9：00 - 10：50
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h4 class="title">
+                        一年1班课程表
+                    </h4>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-font">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>星期一</th>
+                                    <th>星期二</th>
+                                    <th>星期三</th>
+                                    <th>星期四</th>
+                                    <th>星期五</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>一</td>
+                                <td>化学</td>
+                                <td>生物</td>
+                                <td>英语</td>
+                                <td>语文</td>
+                                <td>数学</td>
+                            </tr>
+                            <tr>
+                                <td>二</td>
+                                <td>数学</td>
+                                <td>语文</td>
+                                <td>语文</td>
+                                <td>政治</td>
+                                <td>数学</td>
+                            </tr>
+                            <tr>
+                                <td>三</td>
+                                <td>英语</td>
+                                <td>物理</td>
+                                <td>生物</td>
+                                <td>英语</td>
+                                <td>化学</td>
+                            </tr>
+                            <tr>
+                                <td>四</td>
+                                <td>政治</td>
+                                <td>体育</td>
+                                <td>音乐</td>
+                                <td>地理</td>
+                                <td>语文</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>五</td>
+                                <td>语文</td>
+                                <td>数学</td>
+                                <td>物理</td>
+                                <td>体育</td>
+                                <td>英语</td>
+                            </tr>
+                            <tr>
+                                <td>六</td>
+                                <td>物理</td>
+                                <td>英语</td>
+                                <td>数学</td>
+                                <td>生物</td>
+                                <td>历史</td>
+                            </tr>
+                            <tr>
+                                <td>七</td>
+                                <td>地理</td>
+                                <td>历史</td>
+                                <td>化学</td>
+                                <td>物理</td>
+                                <td>地理</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-4">
+                <div class="record">
+                    <h3 class="page-header">
+                        到课情况统计
+                    </h3>
+                    <div>
+                    <ul class="nav navbar-nav ">
+                        <li class="placeholders"><a href="#">应到：45人</a></li>
+                        <li class="placeholders"><a href="#">实到：40人</a></li>
+                        <li class="placeholders"><a href="#">迟到：5人</a></li>
+                        <li class="placeholders"><a href="#">请假：2人</a></li>
+                        <li class="placeholders"><a href="#">旷课：3人</a></li>
+                        <li class="placeholders"><a href="#">出勤率：88.8%</a></li>
+                    </ul>
+                    </div>
+                    <h3 class="sub-header">
+                        Sign In
+                    </h3>
+                    <div class="table-head table-responsive">
+                        <table class="table table-bordered">
+                            <colgroup>
+                                <col style="width:67px;"/>
+                                <col style="width:196px;"/>
+                                <col style="width:158px;"/>
+                                <col style="width:202px;"/>
+                                <col style="width:203px;"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>学号</th>
+                                <th>姓名</th>
+                                <th>到达时间</th>
+                                <th>迟到时长</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="table-body table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <colgroup>
+                                <col style="width:67px;"/>
+                                <col style="width:196px;"/>
+                                <col style="width:158px;"/>
+                                <col style="width:202px;"/>
+                                <col style="width:203px;"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2015001</td>
+                                    <td>程劲草</td>
+                                    <td>8：01</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2015002</td>
+                                    <td>祝小斌</td>
+                                    <td>8：02</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>2015003</td>
+                                    <td>周佳瑶</td>
+                                    <td>8：05</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>2015004</td>
+                                    <td>姜晓梅</td>
+                                    <td>8：11</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>2015001</td>
+                                    <td>程劲草</td>
+                                    <td>8：20</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>2015002</td>
+                                    <td>祝小斌</td>
+                                    <td>8：21</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>2015003</td>
+                                    <td>周佳瑶</td>
+                                    <td>8：22</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>2015004</td>
+                                    <td>姜晓梅</td>
+                                    <td>8：23</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>2015001</td>
+                                    <td>程劲草</td>
+                                    <td>8：24</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>2015002</td>
+                                    <td>祝小斌</td>
+                                    <td>8：25</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>2015003</td>
+                                    <td>周佳瑶</td>
+                                    <td>8：34</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>2015004</td>
+                                    <td>姜晓梅</td>
+                                    <td>8：46</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>13</td>
+                                    <td>2015001</td>
+                                    <td>程劲草</td>
+                                    <td>9:03</td>
+                                    <td>3分钟</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>14</td>
+                                    <td>2015002</td>
+                                    <td>祝小斌</td>
+                                    <td>9：04</td>
+                                    <td>4分钟</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>15</td>
+                                    <td>2015003</td>
+                                    <td>周佳瑶</td>
+                                    <td>9：08</td>
+                                    <td>8分钟</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>16</td>
+                                    <td>2015004</td>
+                                    <td>姜晓梅</td>
+                                    <td>9：13</td>
+                                    <td>13分钟</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="jquery.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
